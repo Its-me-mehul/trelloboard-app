@@ -62,7 +62,7 @@ class TrelloBoard extends PureComponent {
               {...provided.droppableProps}
               ref={provided.innerRef}
             >
-              {listOrder.map((listID, index) => {
+              {listOrder.map((listID, index) => { 
                 const list = lists[listID];
                 if (list) {
                   const listCards = list.cards.map(cardID => cards[cardID]);
@@ -77,6 +77,8 @@ class TrelloBoard extends PureComponent {
                     />
                   );
                 }
+
+                return null;
               })}
               {provided.placeholder}
               <TrelloCreate list />

@@ -23,7 +23,6 @@ const Title = styled.h4`
 `;
 
 const BoardThumbnail = ({ title }) => {
-  console.log(title);
   return (
     <Thumbnail>
       <Title>{title}</Title>

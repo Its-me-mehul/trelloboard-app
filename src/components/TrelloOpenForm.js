@@ -23,10 +23,12 @@ const TrelloOpenForm = ({ list, children, onClick }) => {
   `;
 
   return (
-    <OpenFormButton onClick={onClick}>
-      <Icon style={{color: "black"}}>add</Icon>
-      <p style={{ flexShrink: 0, color:"black"}}>{children}</p>
-    </OpenFormButton>
+    <div>
+      <OpenFormButton onClick={onClick}>
+        <Icon style={{color: "black"}}>add</Icon>
+        <p style={{ flexShrink: 0, color:"black"}}>{children}</p>
+      </OpenFormButton>
+    </div>
   );
 };
 
